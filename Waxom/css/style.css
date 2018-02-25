@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,800');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: #8c8c8c;
+   
+}
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, .menu, .btn {
+    font-family: "Raleway",Helvetica,Arial;
+}
+
+a:focus{
+    color: #c7b299;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+i{
+    color: #8c8c8c;
+}
+
+i:hover, i:active, i:focus{
+    color: #c7b299;
+}
+
+
+/*------------------------------------*\
+	НАВИГАЦИЯ
+\*------------------------------------*/
+#menu-nav{
+	float:left;
+	width:100%;
+	list-style:none;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+#menu-nav li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	display:block;
+}
+#menu-nav li a{
+	display:block;
+	text-decoration:none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+    color: #8e97ac;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+#menu-nav li a:hover{
+	color:#c7b299;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+#menu-nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+
+#menu-nav ul li{
+	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	float:none;
+}
+
+#menu-nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+}
+
+#menu-nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+
+.menu-cart-search{
+    
+    float: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#form-nav i{
+    color: #8e97ac;
+}
+/*--- конец меню ---*/
+
+
+
+.icon-box-title {
+    color: #363636;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 25px auto 15px;
+}
+
+.icon-box-icon {
+    background: transparent !important;
+    color: #363636;
+    opacity: 0.55;
+    font-size: 44px;
+    height: 72px;
+}
+
+.icon-box-icon:hover{
+	color:#c7b299;
+}
+#second {
+    margin-top: 80px;
+}
+
+
+.description {
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.first_h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+
+
+.first_p {
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.my-btn {
+    white-space: nowrap;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 14px;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none;
+    border-radius: 3px;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(153, 134, 117);
+    background-color: rgb(153, 134, 117);
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+.fbtn {
+    border-color: rgb(153, 134, 117);
+    background-color: rgb(153, 134, 117);
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+#site-navigation {
+    padding: 0;
+}
+
+#brown {
+    background-color: #372720;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.color-accent {
+    font-weight: bold;
+    color: #c7b299;
+}
+
+.cta-title {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.cta-subtitle {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.75em;
+    color: #8c8c8c;
+}
+
+.align-center-margin {
+    margin-bottom:40px;
+    text-align: center;
+}
+
+#our_projects {
+    margin-bottom: 0px !important;
+    padding-top: 70px !important;
+    padding-bottom: 25px !important;
+}
+
+#portfolio {
+    list-style:none;
+    cursor: pointer;
+}
+
+#portfolio li {
+    display: inline;
+}
+
+.btn-primary {
+
+  color: #fff;
+  background-color: rgb(153, 134, 117);
+  border-color: rgb(153, 134, 117);
+
+}
+
+#first {
+    padding: 0;
+}
+
+
+
+.first_h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+}
+
+.icon-box-title, .icon-box-title:hover, .icon-box-title:active, .icon-box-title:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.three_h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ideas_inner {
+    margin-top: 160px;
+}
+
+.three_h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
