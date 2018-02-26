@@ -28,7 +28,7 @@ a, a:hover, a:active, a:focus {
     outline: none;
 }
 
-i{
+i, p{
     color: #8c8c8c;
 }
 
@@ -297,4 +297,44 @@ i:hover, i:active, i:focus{
 .mobile-inner {
     padding-top: 80px;
     padding-right: 15px;
+}
+
+.mobile-p {
+    margin: 0 0 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.mobile-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.mobile-ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+#cups-and-clients {
+    background: #3a2921;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.counter-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    color: #fff;
+}
+
+.counter-title h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color:#c7b299;
 }
