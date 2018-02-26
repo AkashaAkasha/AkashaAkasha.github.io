@@ -176,13 +176,10 @@ i:hover, i:active, i:focus{
     background-color: rgb(153, 134, 117);
     margin-top: 4%;
     margin-bottom: 15%;
-}
-
-.fbtn {
-    border-color: rgb(153, 134, 117);
-    background-color: rgb(153, 134, 117);
-    margin-top: 4%;
-    margin-bottom: 15%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    padding: 20px 40px 20px 40px !important;
 }
 
 #site-navigation {
@@ -268,10 +265,36 @@ i:hover, i:active, i:focus{
 
 .ideas_inner {
     margin-top: 160px;
+    margin-bottom: 60px;
 }
 
 .three_h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 18px;
+}
+
+#shop-search {
+    margin: 10px;
+}
+
+#shop {
+    padding-left: 10px;
+}
+
+#search {
+    padding-left: 20px;
+}
+
+#ideas-img {
+    width: 100%;
+}
+
+#for-mobile {
+    padding-top: 75px;
+}
+
+.mobile-inner {
+    padding-top: 80px;
+    padding-right: 15px;
 }
