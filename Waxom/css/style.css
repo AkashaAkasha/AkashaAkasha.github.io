@@ -376,3 +376,23 @@ i:hover, i:active, i:focus{
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
+
+#big_footer {
+    background-color: #191919;
+    padding-top: 80px;
+    color: white;
+}
+
+.footer_p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.decor {
+    color: #00bff3;
+}
+
+#footer {
+    background: #111;
+}
