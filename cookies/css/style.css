@@ -1,4 +1,7 @@
-
+body{
+    background-color: bisque;
+    margin: 0;
+}
 #f_bg {
     background-color: #503021;
     padding-bottom: 30px;
@@ -10,7 +13,7 @@
 
 .first_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
 }
 
 #img1 {
@@ -33,10 +36,30 @@
 
 .second_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, 400px);
     text-align: center;
+    grid-gap: 5px;
 
 }
+
+@media (min-width:500px){
+    .first_grid {
+    grid-template-columns: 1fr; 
+    }
+    .second_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width:800px){
+    .first_grid {
+    grid-template-columns: 1fr 1fr; 
+    }
+    .second_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .col_sec img{
     width: 100%;
 }
@@ -51,9 +74,6 @@
     font-size: 20px;
 }
 
-.col_sec {
-    margin: 10px;
-}
 
 .text2 {
     text-align: center;
