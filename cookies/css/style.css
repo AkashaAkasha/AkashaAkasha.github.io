@@ -13,7 +13,7 @@ body{
 
 .first_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 #img1 {
@@ -36,28 +36,10 @@ body{
 
 .second_grid {
     display: grid;
-    grid-auto-rows: minmax(200px, 400px);
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
     text-align: center;
     grid-gap: 5px;
 
-}
-
-@media (min-width:500px){
-    .first_grid {
-    grid-template-columns: 1fr; 
-    }
-    .second_grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-}
-@media (min-width:800px){
-    .first_grid {
-    grid-template-columns: 1fr 1fr; 
-    }
-    .second_grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
 
 .col_sec img{
@@ -76,5 +58,9 @@ body{
 
 
 .text2 {
+    text-align: center;
+}
+
+.wrap_img {
     text-align: center;
 }
