@@ -28,7 +28,7 @@
     font-style: italic;
 }
 .wrap_sec {
-    padding: 100px 100px;
+    padding: 100px 100px 0;
 }
 
 .second_grid {
@@ -53,4 +53,8 @@
 
 .col_sec {
     margin: 10px;
+}
+
+.text2 {
+    text-align: center;
 }
