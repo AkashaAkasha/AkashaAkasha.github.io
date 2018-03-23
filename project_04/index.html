@@ -13,37 +13,46 @@
 <body>
   
    <!-- Page Header -->
-   <header class="page_header_first">
-        <div class="container clearfix">
-            <nav class="navigation_wrapper">
-                <ul class="navigation navigation-main">
-                  <li class="navigation_item"><a href="#" class="navigation_link">Support</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Delivery</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Legal</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">About Us</a></li>
-                </ul>
-            </nav>
+   <header class="header-first">
+        <div class="container">
+           <div class="header-first__wrapper">
+                <nav class="header-first__navigation">
+                    <ul class="header-first__list header-first__list-1">
+                      <li class="header-first__item"><a href="#" class="header-first__link">Support</a></li>
+                      <li class="header-first__item"><a href="#" class="header-first__link">Delivery</a></li>
+                      <li class="header-first__item"><a href="#" class="header-first__link">Legal</a></li>
+                      <li class="header-first__item"><a href="#" class="header-first__link">About Us</a></li>
+                    </ul>
+                </nav>
+                <nav class="header-first__navigation">
+                    <ul class="header-first__list header-first__list-2">
+                      <li class="header-first__item"><a href="#" class="header-first__link"><span class="header-first__icon"><img src="img/icon_bag.png" alt=""></span>
+                      $465.00 4 Items</a></li>
+                      <li class="header-first__item"><a href="#" class="header-first__link">Login</a></li>
+                      <li class="header-first__item"><a href="#" class="header-first__link">Register</a></li>
+                    </ul>
+                </nav>
+            </div>            
         </div>
    </header>
-   <header class="page_header_second">
-        <div class="container clearfix">
-           <div class="logo">
-               <a class="brand_link"><img class="brand_logo" src="img/Logo.png" alt="SportsHold" width="182"></a>
-           </div>
-            <nav class="navigation_wrapper">
-                <ul class="navigation navigation-goods">
-                  <li class="navigation_item"><a href="#" class="navigation_link">Home</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Men</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Women</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Children</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Baby</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Our Brands</a></li>
-                  <li class="navigation_item"><a href="#" class="navigation_link">Saless</a></li>
-                </ul>
-            </nav>
+   <header class="header-second">
+        <div class="container container-header-second">          
+               <div class="header-second__logo">
+                   <a class="header-second__logo-link"><img src="img/Logo.png" alt="SportsHold" width="182"></a>
+               </div>
+                <nav class="header-second__navigation">
+                    <ul class="header-second__list">
+                      <li class="header-second__item"><a href="#" class="header-second__link">Home</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Men</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Women</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Children</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Baby</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Our Brands</a></li>
+                      <li class="header-second__item"><a href="#" class="header-second__link">Saless</a></li>
+                    </ul>
+                </nav>            
         </div>
    </header>
-   <!-- /Page Header -->
    
    <!-- Page Main -->
    <main class="page_content">
@@ -67,23 +76,27 @@
        <section class="collections">    
           <div class="container clearfix">
              <div class="kyrie">
-                <img class="kyrie_logo" src="img/logo_kyrie.png" alt="logo_kyrie">
-                 <h3>Discover the new<br><strong>NIKE KYRIE 3</strong></h3>
+                 <div class="kyrie__wrapper">
+                     <img class="kyrie_logo" src="img/logo_kyrie.png" alt="logo_kyrie">
+                    <h3 class="kyrie__title">Discover the new<br><strong>NIKE KYRIE 3</strong></h3>
+                 </div>
                  <a class="btn btn-kyrie" href="#">VIEW COLLECTION</a>
+                 
              </div>
              <div class="arrivals">
-                 <h3>Check out the<br> <strong>NEW ARRIVALS</strong></h3>
-                 <a class="btn btn-arrivals" href="#">DISCOVER</a>
+                 <div class="arrivals__wrapper">
+                     <h3>Check out the<br> <strong>NEW ARRIVALS</strong></h3>
+                     <a class="btn btn-arrivals" href="#">DISCOVER</a>
+                 </div>
              </div>
              <div class="premium">
-                 <h3>Feel <br><strong>PREMIUM</strong></h3>
+                 <h3 class="premium__title">Feel <br><strong>PREMIUM</strong></h3>
              </div>
              <div class="athletes">
-                 <h3>Best for <br><strong>ATHLETES</strong></h3>
+                 <h3 class="athletes__title">Best for <br><strong>ATHLETES</strong></h3>
              </div>              
           </div>
        </section>
-       
        <section class="products">
            <div class="container clearfix">
               <form class="products_categories" name="products" action="#" method="post">
@@ -93,8 +106,7 @@
                   <label class="products_filter" for="products-new">new</label>
                   <label class="products_filter" for="products-popular">popular</label>
                   <label class="products_filter" for="products-top_picks">top picks</label>
-              </form>
-              
+              </form>              
               <ul class="products_wrapper">
                   <li class="one_product">
                      <img class="one_product_img" src="img/Adidas16378271.png" alt="Adidas" width="200">
@@ -105,10 +117,8 @@
                       MEN Adidas Originals Climacool 1 #16378271
                   </li>
               </ul>
-               
            </div>
        </section>
-       
        <section class="brands">
            <div class="container clearfix">
                <div class="brands_item">
@@ -128,11 +138,9 @@
                </div>
                <div class="brands_item">
                    <img src="img/brend6.png" alt="fila">
-               </div>
-               
+               </div>               
            </div>
-       </section>
-       
+       </section>       
        <section class="testimonials">
            <div class="container clearfix">
                <div class="customers">
@@ -173,119 +181,166 @@
                </div>
                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
            </div>
-       </section>
-       
-       <section class="latest_news">
-           <div class="container clearfix">
-               <div class="latest_news_caption_wrapper"><h2 class='caption'>latest news</h2></div>
-               <div class="latest_news_wrapper">
-                   <div class="latest_news_item">
-                       <article class="article article_1">
-                           <h6>DEC 27, 2017</h6>
-                            <p>Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit</p>
-                            <p>24 Comments</p>
+       </section>       
+       <section class="latest-news">
+           <div class="container latest-news__container">
+               <h3 class="latest-news__title">latest news</h3>
+               <div class="latest-news__wrapper">
+                       <article class="article article_1">                           
+                            <p class="article__text">
+                                <span class="article__data">DEC 27, 2017</span><br>
+                                Lorem ipsum dolor sit amet
+                                consectetur adipiscing elits <br>
+                                <img src="img/icon_comments.png" alt="" class="article__img">
+                                <span class="article__comments">24 Comments</span>
+                            </p>
                        </article>
                        <article class="article article_2">
-                           <h6>DEC 27, 2017</h6>
-                            <p>Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit</p>
-                            <p>24 Comments</p>
+                           <p class="article__text">
+                                <span class="article__data">DEC 27, 2017</span><br>
+                                Lorem ipsum dolor sit amet
+                                consectetur adipiscing elits <br>
+                                <img src="img/icon_comments.png" alt="" class="article__img">
+                                <span class="article__comments">24 Comments</span>
+                            </p>
                        </article>
                        <article class="article article_3">
-                           <h6>DEC 27, 2017</h6>
-                            <p>Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit</p>
-                            <p>24 Comments</p>
-                       </article>
-                       
-                   </div>
+                           <p class="article__text">
+                                <span class="article__data">DEC 27, 2017</span><br>
+                                Lorem ipsum dolor sit amet
+                                consectetur adipiscing elits <br>
+                                <img src="img/icon_comments.png" alt="" class="article__img">
+                                <span class="article__comments">24 Comments</span>
+                            </p>
+                       </article>                       
                </div>
            </div>
-       </section>
-       
+       </section>       
        <section class="cta">
-           <div class="container container">
-              <div class="cta_wrapper">
-                 <img src="img/icon_letter.png" alt="">
-                  <h2>Looking for help?</h2>
-                  <p>Have any questions or need help with order? Let us know!</p>
-              </div>
-              <a href="#" class="btn">MAKE AN INQUIRY</a>
+           <div class="container container-cta">
+              <div class="cta__wrapper">
+                    <img class="cta__img" src="img/icon_letter.png" alt="">
+                    <div class="cta__text">
+                      <h3 class="cta__title">Looking for help?</h3>
+                      <p class="cta__about">Have any questions or need help with order? Let us know!</p>
+                     </div> 
+              </div>             
+            <a href="#" class="btn btn-cta">MAKE AN INQUIRY</a>              
            </div>
-       </section>
-       
+       </section>       
        <footer class="footer">
-           <div class="container container">
+           <div class="container">
                <div class="footer-top">
-                   <ul class='navigation usp'>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_1.png" alt="icon"></span>
+                   <ul class='footer-top__list'>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                               <img class='footer-top__img' src="img/icon_footer_1.png" alt="icon">
                                <p>Free Shipping <br>in Europe</p>
                            </a>
                        </li>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_2.png" alt="icon"></span>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                              <img class='footer-top__img' src="img/icon_footer_2.png" alt="icon">
                                <p>Money Back <br>Guarantee</p>
                            </a>
                        </li>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_3.png" alt="icon"></span>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                               <img class='footer-top__img' src="img/icon_footer_3.png" alt="icon">
                                <p>24/7 Customer <br>Support</p>
                            </a>
                        </li>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_4.png" alt="icon"></span>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                               <img class='footer-top__img' src="img/icon_footer_4.png" alt="icon">
                                <p>Lowest Prices <br>Guaranteed</p>
                            </a>
                        </li>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_5.png" alt="icon"></span>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                               <img class='footer-top__img' src="img/icon_footer_5.png" alt="icon">
                                <p>Exclusive Items for <br>Sportshold</p>
                            </a>
                        </li>
-                       <li class='navigation_item'>
-                           <a href="#">
-                               <span class="icon"><img src="img/icon_footer_6.png" alt="icon"></span>
+                       <li class='footer-top__item'>
+                           <a class='footer-top__link' href="#">
+                              <img class='footer-top__img' src="img/icon_footer_62.png" alt="icon">
                                <p>5-Day Delivery <br>in Europe</p>
                            </a>
                        </li>
                    </ul>
                </div>
                <hr>
-               <div class="footer-middle">
-                   
-                   <nav class="navigation_wrapper">
-                        <ul class="navigation-footer">
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Support</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Delivery</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Legal</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">About Us</a></li>
+               <div class="footer-middle">                   
+                   <nav class="contacts">
+                        <ul class="contacts__list">
+                          <li class="contacts__item">
+                              <a href="#" class="contacts__link">
+                                  <img class="contacts__img" src="img/icon_call.png" alt="">
+                                  <p><span class="contacts__title">Call Us</span><br>
+                                      0 (1234) 567 890</p>
+                                
+                              </a>
+                            </li>
+                          <li class="contacts__item">
+                              <a href="#" class="contacts__link"><img class="contacts__img" src="img/icon_email.png" alt=""><p><span class="contacts__title">Email Us</span><br>
+                              hello@sportshold.com</p></a>
+                          </li>
+                          <li class="contacts__item">
+                              <a href="#" class="contacts__link"><img class="contacts__img" src="img/icon_address.png" alt=""><p><span class="contacts__title">Address</span><br>
+                              40 Baria Sreet 133/2, NY, US</p>
+                              </a>
+                          </li>
                         </ul>
                     </nav>
-                    
-                    <nav class="navigation_wrapper">
-                        <ul class="navigation-footer">
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Home</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Men</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Women</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Children</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Baby</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Our Brands</a></li>
-                          <li class="navigation-footer_item"><a href="#" class="navigation_link">Saless</a></li>
+                    <nav class="navigation">
+                       <h4 class="navigation__title">navigation</h4>
+                        <ul class="navigation__list">
+                          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                          <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+                          <li class="navigation__item"><a href="#" class="navigation__link">Latest News</a></li>
+                          <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
+                          <li class="navigation__item"><a href="#" class="navigation__link">Brands</a></li>
                         </ul>
                     </nav>
-                   
+                    <nav class="categories">
+                       <h4 class="categories__title">categories</h4>
+                        <ul class="categories__list">
+                          <li class="categories__item"><a href="#" class="categories__link">Home</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Men</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Women</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Children</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Baby</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Our Brands</a></li>
+                          <li class="categories__item"><a href="#" class="categories__link">Saless</a></li>
+                        </ul>
+                    </nav>
+                   <nav class="sales">
+                       <h4 class="sales__title">sales</h4>
+                        <ul class="sales__list">
+                          <li class="sales__item"><a href="#" class="sales__link">New Arrivals</a></li>
+                          <li class="sales__item"><a href="#" class="sales__link">Most Popular</a></li>
+                          <li class="sales__item"><a href="#" class="sales__link">Top Picks</a></li>
+                          <li class="sales__item"><a href="#" class="sales__link">Outlet</a></li>
+                        </ul>
+                    </nav>
                </div>
+               <hr>
                <div class="footer-bottom">
                    <div class="logo">
-               <a class="brand_link"><img class="brand_logo" src="img/Logo.png" alt="SportsHold" width="182"></a>
-           </div>
+                       <a class="logo__link"><img class="logo__img" src="img/Logo.png" alt="SportsHold" width="182"></a>
+                   </div>
+                   <div class="copyright">
+                       <p class="copyright__item">© 2017 Sportshold. All rights reserved.</p>
+                   </div>
+                   <nav class="social">
+                       <ul class="social__list">
+                          <li class="social__item"><a href="#" class="social__link"><img class="social__img" src="img/icon_twitter.png" alt=""></a></li>
+                          <li class="social__item"><a href="#" class="social__link"><img class="social__img" src="img/icon_f.png" alt=""></a></li>
+                          <li class="social__item"><a href="#" class="social__link"><img class="social__img" src="img/icon_p.png" alt=""></a></li>
+                          <li class="social__item"><a href="#" class="social__link"><img class="social__img" src="img/icon_yt.png" alt=""></a></li>
+                        </ul>
+                   </nav>
                </div>
            </div>
        </footer>
