@@ -1,18 +1,30 @@
+@font-face {
+    font-family: TruenoBd;
+    src: url('../fonts/TruenoBd.otf');
+}
+
+@font-face {
+    font-family: TruenoLt;
+    src: url('../fonts/TruenoLt.otf');
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Trueno, Arial;
+    font-family: TruenoLt, Arial;
     font-weight: 300;
 }
 
 h3{
     font-size: 30px;
+    font-family: TruenoLt;
     font-weight: 300;
     margin: 0;
 }
 
 h4{
     font-size: 16px;
+    font-family: TruenoLt;
     font-weight: 300;
     margin: 0;
 }
@@ -39,6 +51,8 @@ p{
 
 /*=======================Page Header ===========*/
 .header-first {
+    display: block;
+    width: 100%;
     height: 50px;
     background: #482424;
 }
@@ -118,6 +132,8 @@ p{
 .banner {
     background: #f0efee url(../img/Layer_banner.png) no-repeat;
     height: 600px;
+    display: block;
+    width: 100%;
 }
 
 .banner_text_wrapper {
@@ -135,12 +151,14 @@ p{
     color: #623232;
     font-size: 70px;
     font-weight: bold;
+    font-family: TruenoBd;
 }
 
 .banner_text_wrapper h2{
     color: #ff7270;
     font-size: 50px;
     font-weight: bold;
+    font-family: TruenoBd;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -267,6 +285,8 @@ p{
 /*==============  products   ===========*/
 .products {
     margin-top: 100px;
+    display: block;
+    width: 100%;
 }
 
 .products_filter input[type="radio"] {  
@@ -283,6 +303,7 @@ p{
 .products_filter:hover span, .products_filter input[type="radio"]:checked + span{
     color: #623232;
     font-weight: bold;
+    font-family: TruenoBd;
 }
 
 .products_categories {
@@ -318,8 +339,9 @@ p{
 }
 
 .products__img {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-left: 30px;
+    height: 110px;
 }
 
 .products__new-price {
@@ -328,9 +350,16 @@ p{
     width: 130px;
 }
 
+.products__base-price {
+    font-size: 24px;
+    color: #8a8784;
+    width: 130px;
+}
+
 .products__sale {
     font-style: 16px;
     font-weight: bold;
+    font-family: TruenoBd;
     color: #fff;
     background: #ff7270;
     display: inline-block;
@@ -351,11 +380,16 @@ p{
 .products__sex {
     text-transform: uppercase;
     font-weight: bold;
+    font-family: TruenoBd;
     
 }
 
 .products__order {
     font-size: 13px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 /*=============  brands  ==========*/
@@ -373,11 +407,15 @@ p{
 .brands {
     margin-top: 100px;
     margin-bottom: 100px;
+    display: block;
+    width: 100%;
 }
 
 /*============  testimonials   ============*/
 .testimonials {
     height: 570px;
+    display: block;
+    width: 100%;
     background: url(../img/testimonials_background.png);
 }
 
@@ -425,6 +463,7 @@ p{
     text-transform: uppercase;
     color: #623232;
     font-weight: bold;
+    font-family: TruenoBd;
 }
 
 .latest-news__wrapper {
@@ -470,11 +509,15 @@ p{
 
 .article__data {
     font-weight: bold;
+    font-family: TruenoBd;
 }
 
 .article__comments {
     font-size: 13px;
     color: #ff7270;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .article__img {
@@ -523,6 +566,7 @@ p{
 .cta__title {
     text-transform: uppercase;
     font-weight: bold;
+    font-family: TruenoBd;
     margin-bottom: 7px;
 }
 
@@ -535,6 +579,8 @@ p{
 /*==============================  footer  ======*/
 .footer {
     background: #633231;
+    display: block;
+    width: 100%;
 }
 
 .footer-top {
@@ -627,6 +673,7 @@ p{
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .social__link {
@@ -644,3 +691,7 @@ p{
 
 
 
+
+.header-first__items {
+    color: #dcc5b8;
+}
