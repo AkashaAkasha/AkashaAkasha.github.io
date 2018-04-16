@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <title>SportsHold</title>
     
-    <!-- Fonts -->
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
-  
+<body class="no-js">
+ <section id="home"></section>
+    
    <!-- Page Header -->
-   <header class="header-first">
-        <div class="container">
-           <div class="header-first__wrapper">
-                <nav class="header-first__navigation">
-                    <ul class="header-first__list header-first__list-1">
+   <header class="header header-first">
+        <div class="container container-header-first">
+                <nav class="navigation_wrapper">
+                    <ul class="navigation navigation-first-left">
                       <li class="header-first__item"><a href="#" class="header-first__link">Support</a></li>
                       <li class="header-first__item"><a href="#" class="header-first__link">Delivery</a></li>
                       <li class="header-first__item"><a href="#" class="header-first__link">Legal</a></li>
                       <li class="header-first__item"><a href="#" class="header-first__link">About Us</a></li>
                     </ul>
                 </nav>
-                <nav class="header-first__navigation">
-                    <ul class="header-first__list header-first__list-2">
-                      <li class="header-first__item"><a href="#" class="header-first__link"><span class="header-first__icon"><img src="img/icon_bag.png" alt=""></span>
-                      $465.00 <span class="header-first__items">4 Items</span></a></li>
+                <nav class="navigation_wrapper">
+                    <ul class="navigation navigation-first-right">
+                      <li class="header-first__item">
+                          <a href="#" class="header-first__link header-first__icon">
+                          $465.00 <span class="header-first__goods-count"> 4 Items</span>
+                          </a>
+                      </li>
                       <li class="header-first__item"><a href="#" class="header-first__link">Login</a></li>
                       <li class="header-first__item"><a href="#" class="header-first__link">Register</a></li>
                     </ul>
-                </nav>
-            </div>            
+                </nav>            
         </div>
    </header>
-   <header class="header-second">
+   <header class="header header-second">
         <div class="container container-header-second">          
                <div class="header-second__logo">
-                   <a class="header-second__logo-link"><img src="img/Logo.png" alt="SportsHold" width="182"></a>
+                   <a id="logo" class="header-second__logo-link"><img src="img/Logo.png" alt="SportsHold" width="182"></a>
                </div>
-                <nav class="header-second__navigation">
-                    <ul class="header-second__list">
-                      <li class="header-second__item"><a href="#" class="header-second__link">Home</a></li>
+                <nav class="navigation_wrapper">
+                    <ul class="navigation navigation-second-right">
+                      <li class="header-second__item"><a href="#home" class="header-second__link">Home</a></li>
                       <li class="header-second__item"><a href="#" class="header-second__link">Men</a></li>
                       <li class="header-second__item"><a href="#" class="header-second__link">Women</a></li>
                       <li class="header-second__item"><a href="#" class="header-second__link">Children</a></li>
@@ -57,7 +58,7 @@
    <!-- Page Main -->
    <main class="page_content">
        <h1 class="visually-hidden">SportsHold</h1>
-       
+              
        <!-- banner -->
        <section class="banner">
            <div class="container clearfix">
@@ -224,24 +225,24 @@
        </section>
        <section class="brands">
            <div class="container clearfix">
-               <div class="brands_item">
+               <a href="#" class="brands_item">
                    <img src="img/brend1.png" alt="adidas">
-               </div>
-               <div class="brands_item">
+               </a>
+               <a href="#" class="brands_item">
                    <img src="img/brend2.png" alt="nike">
-               </div>
-               <div class="brands_item">
+               </a>
+               <a href="#" class="brands_item">
                    <img src="img/brend3.png" alt="puma">
-               </div>
-               <div class="brands_item">
+               </a>
+               <a href="#" class="brands_item">
                    <img src="img/brend4.png" alt="dasics">
-               </div>
-               <div class="brands_item">
+               </a>
+               <a href="#" class="brands_item">
                    <img src="img/brend5.png" alt="nb">
-               </div>
-               <div class="brands_item">
+               </a>
+               <a href="#" class="brands_item">
                    <img src="img/brend6.png" alt="fila">
-               </div>               
+               </a>               
            </div>
        </section>       
        <section class="testimonials">
@@ -282,7 +283,9 @@
                    </div>
                    
                </div>
-               <p class="testimonials__comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+               <div class="comment-header">
+                   <p class="testimonials__comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+               </div>
            </div>
        </section>       
        <section class="latest-news">
@@ -294,7 +297,7 @@
                                 <span class="article__data">DEC 27, 2017</span><br>
                                 Lorem ipsum dolor sit amet
                                 consectetur adipiscing elits <br>
-                                <span class="article__comments"><img src="img/icon_comments.png" alt="" class="article__img">24 Comments</span>
+                                <span class="article__comments">24 Comments</span>
                             </p>
                        </article>
                        <article class="article article_2">
@@ -302,7 +305,7 @@
                                 <span class="article__data">DEC 27, 2017</span><br>
                                 Lorem ipsum dolor sit amet
                                 consectetur adipiscing elits <br>
-                                <span class="article__comments"><img src="img/icon_comments.png" alt="" class="article__img">24 Comments</span>
+                                <span class="article__comments">24 Comments</span>
                             </p>
                        </article>
                        <article class="article article_3">
@@ -310,7 +313,7 @@
                                 <span class="article__data">DEC 27, 2017</span><br>
                                 Lorem ipsum dolor sit amet
                                 consectetur adipiscing elits <br>
-                                <span class="article__comments"><img src="img/icon_comments.png" alt="" class="article__img">24 Comments</span>
+                                <span class="article__comments">24 Comments</span>
                             </p>
                        </article>                       
                </div>
@@ -370,7 +373,6 @@
                        </li>
                    </ul>
                </div>
-               <hr>
                <div class="footer-middle">                   
                    <nav class="contacts">
                         <ul class="contacts__list">
@@ -393,10 +395,10 @@
                           </li>
                         </ul>
                     </nav>
-                    <nav class="navigation">
+                    <nav class="navigation-wrapp">
                        <h4 class="navigation__title">navigation</h4>
                         <ul class="navigation__list">
-                          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                          <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
                           <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
                           <li class="navigation__item"><a href="#" class="navigation__link">Latest News</a></li>
                           <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
@@ -425,7 +427,6 @@
                         </ul>
                     </nav>
                </div>
-               <hr>
                <div class="footer-bottom">
                    <div class="logo">
                        <a class="logo__link"><img class="logo__img" src="img/Logo.png" alt="SportsHold" width="182"></a>
@@ -446,6 +447,12 @@
        </footer>
        
    </main>
+
+   <!--  JAVA SCRIPTS  -->
+<script src="js/no-js.js"></script>
+<!--
+<script src="js/slider.js"></script>   -->
+<script src="js/sticky-header.js"></script>
     
 </body>
 </html>
