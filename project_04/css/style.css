@@ -386,7 +386,10 @@ p{
     border: 1px solid #e0dfde;
     margin-top: 30px;
     box-sizing: border-box;
+}
 
+.products__link{
+    text-decoration: none;
 }
 
 .products__price{
@@ -440,11 +443,16 @@ p{
     text-transform: uppercase;
     font-weight: bold;
     font-family: TruenoBd;
-    
+    color: var(--grey-p-color);
+}
+
+.products__name{
+    color: var(--grey-p-color);
 }
 
 .products__order {
     font-size: 13px;
+    color: #bdb9b5;
 }
 
 .hidden {
@@ -597,6 +605,10 @@ p{
     padding-top: 10px;
 }
 
+.latest-news__link{
+    text-decoration: none;
+}
+
 /*===================cta====================*/
 .cta {
     height: 200px;
@@ -711,12 +723,25 @@ p{
     color: var(--pink-color);
     text-transform: uppercase;
     padding-bottom: 16px;
+    font-family: TruenoBd;
 }
 
-.contacts__img {
-    background: var(--pink-color);
-    padding: 15px;
+.contacts__icon {
     margin: 0 20px 20px 0;
+    width: 55px;
+    height: 55px;
+}
+
+.contacts__icon-call {
+    background: var(--pink-color) url(../img/icon_call.png) no-repeat 50% 50%;
+}
+
+.contacts__icon-email {
+    background: var(--pink-color) url(../img/icon_email.png) no-repeat 50% 50%;
+}
+
+.contacts__icon-address {
+    background: var(--pink-color) url(../img/icon_address.png) no-repeat 50% 50%;
 }
 
 .navigation__item {
@@ -753,17 +778,3 @@ p{
 .social__link {
     padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
