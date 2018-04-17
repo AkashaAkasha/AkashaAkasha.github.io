@@ -262,45 +262,57 @@
        </section>       
        <section class="testimonials">
            <div class="container">
-               <div class="customers">
-                   <div class="customers_item">
-                       <img src="img/avatar.png" alt="avatar">
-                       <h4 class="customers__name">Name</h4>
-                       <div class="stars_wrapper">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star1.png" alt="star">
-                       </div>
-                   </div>
-                   <div class="customers_item">
-                       <img src="img/avatar_ch.png" alt="avatar">
-                       <h4 class="customers__name customers__name-checked">Name</h4>
-                       <div class="stars_wrapper">
-                           <img src="img/star2ch.png" alt="star">
-                           <img src="img/star2ch.png" alt="star">
-                           <img src="img/star2ch.png" alt="star">
-                           <img src="img/star1ch.png" alt="star">
-                           <img src="img/star1ch.png" alt="star">
-                       </div>
-                   </div>
-                   <div class="customers_item">
-                       <img src="img/avatar.png" alt="avatar">
-                       <h4 class="customers__name">Name</h4>
-                       <div class="stars_wrapper">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star2.png" alt="star">
-                           <img src="img/star1.png" alt="star">
-                       </div>
-                   </div>
-                   
-               </div>
-               <div class="comment-header">
-                   <p class="testimonials__comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-               </div>
+               <div id="customers_slider" class="slider">                  
+                    <div class="slider_indicators">
+                       <input id="slide-01" class="slider_switch hidden" type="radio" name="switch">
+                        <label class="slider_indicator" for="slide-01">
+                            <div class="customers_item customers_item-1">
+                               <img src="img/avatar.png" alt="avatar">
+                               <h4 class="customers__name">Christopher Atkins</h4>
+                               <div class="stars_wrapper">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                               </div>
+                           </div>
+                        </label>
+                        <input id="slide-02" class="slider_switch hidden" type="radio" name="switch" checked>
+                        <label class="slider_indicator" for="slide-02">
+                            <div class="customers_item customers_item-02">
+                               <img src="img/avatar.png" alt="avatar">
+                               <h4 class="customers__name">Andrew Ferraccioli</h4>
+                               <div class="stars_wrapper">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star1.png" alt="star">
+                               </div>
+                           </div>
+                        </label>
+                        <input id="slide-03" class="slider_switch hidden" type="radio" name="switch">
+                        <label class="slider_indicator" for="slide-03">
+                            <div class="customers_item customers_item-03">
+                               <img src="img/avatar.png" alt="avatar">
+                               <h4 class="customers__name">Sandra Jensen</h4>
+                               <div class="stars_wrapper">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star2.png" alt="star">
+                                   <img src="img/star1.png" alt="star">
+                                   <img src="img/star1.png" alt="star">
+                               </div>
+                           </div>
+                        </label>
+                        <div class="testimonials__wrapper">
+                            <p class="testimonials__comment slider_slide-01">“Nike is the best!!!! Be happy.....Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                            <p class="testimonials__comment slider_slide-02">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                            <p class="testimonials__comment slider_slide-03">“All is beauty. Cross is very good!!!!<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.” </p>
+                        </div>
+                    </div>
+                </div>
            </div>
        </section>       
        <section class="latest-news">
@@ -308,7 +320,7 @@
                <h3 class="latest-news__title">latest news</h3>
                <div class="latest-news__wrapper">
                     <a href="#" class="latest-news__link">
-                       <article class="article article_1">                           
+                       <article class="article article_1">                
                             <p class="article__text">
                                 <span class="article__data">DEC 27, 2017</span><br>
                                 Lorem ipsum dolor sit amet
@@ -349,7 +361,7 @@
                       <p class="cta__about">Have any questions or need help with order? Let us know!</p>
                      </div> 
               </div>             
-            <a href="#" class="btn btn-cta">MAKE AN INQUIRY</a>              
+            <a href="#" class="btn btn-cta">MAKE AN INQUIRY</a>             
            </div>
        </section>       
        <footer class="footer">
@@ -474,8 +486,6 @@
 
    <!--  JAVA SCRIPTS  -->
 <script src="js/no-js.js"></script>
-<!--
-<script src="js/slider.js"></script>   -->
 <script src="js/sticky-header.js"></script>
     
 </body>
