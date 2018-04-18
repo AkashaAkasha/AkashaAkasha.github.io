@@ -28,6 +28,7 @@ body {
     padding: 0;
     font-family: TruenoLt, Arial;
     font-weight: 300;
+    min-width: 1110px;
 }
 
 h3{
@@ -54,8 +55,7 @@ p{
     margin: 0;
 }
 
-.visually-hidden {
-  
+.visually-hidden {  
   position: absolute;
   width: 1px;
   height: 1px;
@@ -64,8 +64,7 @@ p{
   margin: -1px;
   white-space: nowrap;
   overflow: hidden;
-  clip: rect(0 0 0 0);
-  
+  clip: rect(0 0 0 0);  
 }
 
 /*=======================Page Header ===========*/
