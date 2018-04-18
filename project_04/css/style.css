@@ -496,10 +496,34 @@ p{
     width: 160px;
 }
 
+.customers__avatar{
+    background: url(../img/avatar_ch.png) no-repeat 50% 0;
+    width: 160px;
+    height: 65px;
+}
+
 .customers__name {
-    color: var( --white-color);
+    color: #a89594;
     margin-top: 25px;
     margin-bottom: 3px;
+}
+
+.stars_wrapper{
+    width: 116px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.stars_wrapper-01{
+    background: url(../img/stars.png) no-repeat 0 -23px;    
+}
+
+.stars_wrapper-02{
+    background: url(../img/stars.png) no-repeat -24px -23px;    
+}
+
+.stars_wrapper-03{
+    background: url(../img/stars.png) no-repeat -48px -23px; 
 }
 
 .testimonials__comment {
@@ -539,6 +563,10 @@ p{
     left: calc(28% - 10px);
 }
 
+#slide-01:checked ~ .slider_indicator .customers_item-01 .customers__avatar{
+    background: url(../img/avatar.png) no-repeat 50% 0;
+}
+
 #slide-02:checked ~ .testimonials__wrapper .slider_slide-01,  .testimonials__wrapper .slider_slide-03 {
     visibility: hidden;
 }
@@ -551,6 +579,10 @@ p{
     left: calc(50% - 10px);
 }
 
+#slide-02:checked ~ .slider_indicator .customers_item-02 .customers__avatar{
+    background: url(../img/avatar.png) no-repeat 50% 0;
+}
+
 #slide-03:checked ~ .testimonials__wrapper .slider_slide-01,  .testimonials__wrapper .slider_slide-02 {
     visibility: hidden;
 }
@@ -561,6 +593,34 @@ p{
 
 #slide-03:checked ~ .testimonials__wrapper .slider_slide-03::before {
     left: calc(72% - 10px);
+}
+
+#slide-03:checked ~ .slider_indicator .customers_item-03 .customers__avatar{
+    background: url(../img/avatar.png) no-repeat 50% 0;
+}
+
+#slide-01:checked ~ .slider_indicator .stars_wrapper-01{
+    background: url(../img/stars.png) no-repeat 0 0;    
+}
+
+#slide-02:checked ~ .slider_indicator .stars_wrapper-02{
+    background: url(../img/stars.png) no-repeat -24px 0;    
+}
+
+#slide-03:checked ~ .slider_indicator .stars_wrapper-03{
+    background: url(../img/stars.png) no-repeat -48px 0; 
+}
+
+#slide-01:checked ~ .slider_indicator .customers_item-01 .customers__name {
+    color: var( --white-color);
+}
+
+#slide-02:checked ~ .slider_indicator .customers_item-02 .customers__name {
+    color: var( --white-color);
+}
+
+#slide-03:checked ~ .slider_indicator .customers_item-03 .customers__name {
+    color: var( --white-color);
 }
 
 /*=============    latest_news  ===========*/
