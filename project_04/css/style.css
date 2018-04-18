@@ -716,15 +716,47 @@ p{
     text-align: center;
 }
 
+.footer-top__item{
+    width: 160px;
+}
+
 .footer-top__link {
     text-decoration: none;
     font-size: 16px;
     color: var(--white-color);
-    width: 160px;
 }
 
 .footer-top__img {
     margin-bottom: 20px;
+}
+
+.img_holder{
+    width: 160px;
+    height: 60px;
+}
+
+.img_holder-1{
+    background: url(../img/icon_footer_1.png) no-repeat 50% 0;
+}
+
+.img_holder-2{
+    background: url(../img/icon_footer_2.png) no-repeat 50% 0;
+}
+
+.img_holder-3{
+    background: url(../img/icon_footer_3.png) no-repeat 50% 0;
+}
+
+.img_holder-4{
+    background: url(../img/icon_footer_4.png) no-repeat 50% 0;
+}
+
+.img_holder-5{
+    background: url(../img/icon_footer_5.png) no-repeat 50% 0;
+}
+
+.img_holder-6{
+    background: url(../img/icon_footer_62.png) no-repeat 50% 0;
 }
 
 /* =====================footer-middle ---------------------*/
