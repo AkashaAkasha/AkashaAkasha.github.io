@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css" />
     
 </head>
 <body class="no-js">
@@ -30,8 +31,10 @@
                           $465.00 <span class="header-first__goods-count"> 4 Items</span>
                           </a>
                       </li>
-                      <li class="header-first__item"><a href="#" class="header-first__link">Login</a></li>
-                      <li class="header-first__item"><a href="#" class="header-first__link">Register</a></li>
+                      <li class="header-first__item">
+                      <a href="#login_form" id="login_pop" class="header-first__link">Login</a></li>
+                      <li class="header-first__item">
+                      <a href="#join_form" id="join_pop" class="header-first__link">Register</a></li>
                     </ul>
                 </nav>            
         </div>
@@ -54,6 +57,49 @@
                 </nav>            
         </div>
    </header>
+   <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>Welcome Guest!</h2>
+            <p>Please enter your login and password here</p>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <input class="btn-popup" type="button" value="Login" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>Sign Up</h2>
+            <p>Please enter your details here</p>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" value="" />
+            </div>
+            <div>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" value="" />
+            </div>
+            <div>
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" value="" />
+            </div>
+            <input class="btn-popup" type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Login</a>
+
+            <a class="close" href="#close"></a>
+        </div>
    
    <!-- Page Main -->
    <main class="page_content">
