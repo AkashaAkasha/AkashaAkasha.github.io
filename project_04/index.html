@@ -10,8 +10,7 @@
     <link href="css/modal.css" rel="stylesheet" type="text/css" />
     
 </head>
-<body class="no-js">
- <section id="home"></section>
+<body id="home" class="no-js">
     
    <!-- Page Header -->
    <header class="header header-first">
@@ -58,26 +57,26 @@
         </div>
    </header>
    <!-- popup form #1 -->
-        <a href="#x" class="overlay" id="login_form"></a>
-        <div class="popup">
-            <h2>Welcome Guest!</h2>
-            <p>Please enter your login and password here</p>
-            <div>
-                <label for="login">Login</label>
-                <input type="text" id="login" value="" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" value="" />
-            </div>
-            <input class="btn-popup" type="button" value="Login" />
+    <a href="#x" class="overlay" id="login_form"></a>
+    <div class="popup">
+                <h2>Welcome Guest!</h2>
+                <p>Please enter your login and password here</p>
+                <div>
+                    <label for="login">Login</label>
+                    <input type="text" id="login" value="" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" value="" />
+                </div>
+                <input class="btn-popup" type="button" value="Login" />
 
-            <a class="close" href="#close"></a>
-        </div>
+                <a class="close" href="#close"></a>
+            </div>
 
-        <!-- popup form #2 -->
-        <a href="#x" class="overlay" id="join_form"></a>
-        <div class="popup">
+    <!-- popup form #2 -->
+    <a href="#x" class="overlay" id="join_form"></a>
+    <div class="popup">
             <h2>Sign Up</h2>
             <p>Please enter your details here</p>
             <div>
@@ -100,6 +99,11 @@
 
             <a class="close" href="#close"></a>
         </div>
+    
+    <!-- go to top -->
+    <div class="go-top display-none">
+        <a class="smoothscroll" title="Back to Top" href="#home"> <span>▲</span></a>
+    </div>
    
    <!-- Page Main -->
    <main class="page_content">
@@ -518,6 +522,7 @@
    <!--  JAVA SCRIPTS  -->
 <script src="js/no-js.js"></script>
 <script src="js/sticky-header.js"></script>
+<script src="js/gotop.js"></script>
     
 </body>
 </html>

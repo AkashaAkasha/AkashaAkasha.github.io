@@ -904,3 +904,39 @@ p{
 .social__link {
     padding: 20px;
 }
+
+/*----------------------- go-top  ----------------------*/
+.go-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.display-none{
+    display: none;   
+}
+
+.go-top a, .go-top a:visited {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--header-dark-brown-color);
+    color: var(--white-color);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.go-top a i, .go-top a:visited i {
+    font-size: 18px;
+    line-height: inherit;
+}
+
+.go-top a:hover, .go-top a:focus {
+    color: var(--pink-color);
+}
