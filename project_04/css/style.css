@@ -185,6 +185,16 @@ p{
     left: 0;
     right: 0; 
     z-index: 1;
+    background-color: rgba(99, 50, 49, 0.75);
+    transition: background-color 1s;
+}
+
+.header-second-sticky .header-second__link{
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+}
+
+.header-second-sticky .header-second__link:hover{
+    border-bottom: 5px solid var(--pink-color);
 }
 
 /*=====================banner========================*/
@@ -921,11 +931,12 @@ p{
     text-decoration: none;
     border: 0 none;
     display: block;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
     text-align: center;
-    background: var(--header-dark-brown-color);
+    background: rgba(99, 50, 49, 0.75);
+    border-radius: 30px;
     color: var(--white-color);
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
