@@ -11,7 +11,6 @@
     
 </head>
 <body id="home" class="no-js">
-    
    <!-- Page Header -->
    <header class="header header-first">
         <div class="container container-header-first">
@@ -61,6 +60,7 @@
     <div class="popup">
                 <h2>Welcome Guest!</h2>
                 <p>Please enter your login and password here</p>
+                <form class="popup_login" name="login" action="#" method="post">
                 <div>
                     <label for="login">Login</label>
                     <input type="text" id="login" value="" />
@@ -70,46 +70,41 @@
                     <input type="password" id="password" value="" />
                 </div>
                 <input class="btn-popup" type="button" value="Login" />
-
+                </form>
                 <a class="close" href="#close"></a>
             </div>
-
     <!-- popup form #2 -->
     <a href="#x" class="overlay" id="join_form"></a>
     <div class="popup">
             <h2>Sign Up</h2>
             <p>Please enter your details here</p>
-            <div>
-                <label for="email">Login (Email)</label>
-                <input type="text" id="email" value="" />
-            </div>
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" value="" />
-            </div>
-            <div>
-                <label for="firstname">First name</label>
-                <input type="text" id="firstname" value="" />
-            </div>
-            <div>
-                <label for="lastname">Last name</label>
-                <input type="text" id="lastname" value="" />
-            </div>
-            <input class="btn-popup" type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Login</a>
-
+            <form class="popup_singup" name="singup" action="#" method="post">
+                <div>
+                    <label for="email">Login (Email)</label>
+                    <input type="text" id="email" value="" />
+                </div>
+                <div>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" value="" />
+                </div>
+                <div>
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname" value="" />
+                </div>
+                <div>
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname" value="" />
+                </div>
+                <input class="btn-popup" type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Login</a>
+            </form>
             <a class="close" href="#close"></a>
         </div>
-    
     <!-- go to top -->
-    <div class="go-top display-none">
-        <a class="smoothscroll" title="Back to Top" href="#home"> <span>▲</span></a>
-    </div>
-   
+    <a id="toup" class="toup" title="Back to Top" href="#home"> <span>▲</span></a>
    <!-- Page Main -->
    <main class="page_content">
        <h1 class="visually-hidden">SportsHold</h1>
-              
-       <!-- banner -->
+        <!-- banner -->
        <section class="banner">
            <div class="container clearfix">
               <div class="banner_text_wrapper">
@@ -122,8 +117,7 @@
                
            </div>
        </section>
-       
-       <!-- collections -->
+        <!-- collections -->
        <section class="collections">    
           <div class="container clearfix">
              <div class="kyrie">
@@ -148,6 +142,7 @@
              </div>              
           </div>
        </section>
+        <!-- products -->
        <section class="products">
            <div class="container">
               <form class="products_categories" name="products" action="#" method="post">                         
@@ -169,6 +164,7 @@
               </ul>
            </div>
        </section>
+        <!-- brands -->
        <section class="brands">
            <div class="container clearfix">
                <a href="#" class="brands_item">
@@ -397,14 +393,13 @@
                </div>
            </div>
        </footer>
-       
    </main>
 
    <!--  JAVA SCRIPTS  -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/no-js.js"></script>
 <script src="js/sticky-header.js"></script>
-<script src="js/gotop.js"></script>
+<script src="js/toup.js"></script>
 <script src="js/goods.js"></script>
     
 </body>

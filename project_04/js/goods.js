@@ -14,10 +14,10 @@ function goodsOut(data) {
         out += `<p class="products__base-price">$${data[key].base_price}<br>`;
         if (data[key].old_price != 0)
         out += `<span class="products__old-price">$${data[key].old_price}</span></p>`;
+        out += `</div>`;
         if (data[key].sale != 0)
         out += `<p class="products__sale">-${data[key].sale}%</p>`;
-        out += `</div>`;
-        out += `<img class="products__img" src="${data[key].img}" alt="cross-img" width="200">`;
+        out += `<img class="products__img" src="${data[key].img}" alt="cross-img" width="255">`;
         out += `<div class="products__about">`;
         out += `<p class="products__sex">${data[key].sex}</p>`;
         out += `<p class="products__name">${data[key].name}</p>`;

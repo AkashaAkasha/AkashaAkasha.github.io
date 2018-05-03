@@ -4,7 +4,7 @@
     "new_price": 45.00,
     "old_price": 60.00,
     "sale": 25,
-    "img": "img/product1.png",
+    "img": "img/pr1.png",
     "sex": "MEN",
     "name": "Converse Breakpoint Suede Blue",
     "order": "16378271"
@@ -14,7 +14,7 @@
     "new_price": 0,
     "old_price": 0,
     "sale": 0,
-    "img": "img/product2.png",
+    "img": "img/pr2.png",
     "sex": "MEN/WOMEN",
     "name": "Converse CT All Star II",
     "order": "16378272"
@@ -24,7 +24,7 @@
     "new_price": 60.00,
     "old_price": 80.00,
     "sale": 25,
-    "img": "img/product3.png",
+    "img": "img/pr3.png",
     "sex": "WOMEN",
     "name": "Adidas Pure Boost Chill",
     "order": "16378273"
@@ -34,7 +34,7 @@
     "new_price": 0,
     "old_price": 0,
     "sale": 0,
-    "img": "img/product4.png",
+    "img": "img/pr4.png",
     "sex": "MEN",
     "name": "Puma Duplex W Casual",
     "order": "16378274"
@@ -44,7 +44,7 @@
     "new_price": 0,
     "old_price": 0,
     "sale": 0,
-    "img": "img/product5.png",
+    "img": "img/pr5.png",
     "sex": "MEN",
     "name": "Adidas Alphabounce 1M",
     "order": "16378275"
@@ -54,7 +54,7 @@
     "new_price": 50.00,
     "old_price": 100.00,
     "sale": 50,
-    "img": "img/product6.png",
+    "img": "img/pr6.png",
     "sex": "MEN",
     "name": "Asics GEL-Epirus",
     "order": "16378276"
@@ -64,7 +64,7 @@
     "new_price": 0,
     "old_price": 0,
     "sale": 0,
-    "img": "img/product7.png",
+    "img": "img/pr7.png",
     "sex": "MEN",
     "name": "Adidas Originals Courtvantage Mesh",
     "order": "16378277"
@@ -74,7 +74,7 @@
     "new_price": 0,
     "old_price": 0,
     "sale": 0,
-    "img": "img/product8.png",
+    "img": "img/pr8.png",
     "sex": "MEN",
     "name": "Adidas Originals Climacool 1",
     "order": "16378278"

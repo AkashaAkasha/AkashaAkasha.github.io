@@ -67,6 +67,10 @@ p{
   clip: rect(0 0 0 0);  
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /*=======================Page Header ===========*/
 .header {
     display: block;
@@ -395,37 +399,28 @@ p{
     height: 350px;
     border: 1px solid #e0dfde;
     margin-top: 30px;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .products__link{
     text-decoration: none;
+    position: absolute;
 }
 
 .products__price{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 25px;
-    margin-left: 30px;
-}
-
-.products__img {
-    margin-bottom: 30px;
-    margin-left: 30px;
-    height: 110px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 .products__new-price {
     font-size: 24px;
     color: var(--pink-color);
-    width: 130px;
 }
 
 .products__base-price {
     font-size: 24px;
     color: #8a8784;
-    width: 130px;
 }
 
 .products__sale {
@@ -436,6 +431,9 @@ p{
     background: var(--pink-color);
     display: inline-block;
     padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 
 .products__old-price {
@@ -444,9 +442,16 @@ p{
     font-size: 16px;
 }
 
+.products__img{
+    border: none;
+	outline: none;
+}
+
 .products__about {
-    padding-left: 30px;
-    padding-right: 30px;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
 }
 
 .products__sex {
@@ -463,10 +468,6 @@ p{
 .products__order {
     font-size: 13px;
     color: #bdb9b5;
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 /*=============  brands  ==========*/
@@ -916,20 +917,12 @@ p{
 }
 
 /*----------------------- go-top  ----------------------*/
-.go-top {
+.toup, .toup:visited {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 100;
-}
-
-.display-none{
-    display: none;   
-}
-
-.go-top a, .go-top a:visited {
     text-decoration: none;
-    border: 0 none;
     display: block;
     height: 60px;
     width: 60px;
@@ -938,16 +931,18 @@ p{
     background: rgba(99, 50, 49, 0.75);
     border-radius: 30px;
     color: var(--white-color);
+    border: 1px solid var(--white-color);
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    display: none;
 }
 
-.go-top a i, .go-top a:visited i {
-    font-size: 18px;
-    line-height: inherit;
+.toup-visible{
+    display: block;   
 }
 
-.go-top a:hover, .go-top a:focus {
+.toup:hover, .toup:focus {
     color: var(--pink-color);
+    border: 1px solid var(--pink-color);
 }
