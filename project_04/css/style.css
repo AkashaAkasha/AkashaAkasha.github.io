@@ -409,7 +409,7 @@ p{
 
 .products__price{
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 30px;
 }
 
@@ -430,10 +430,10 @@ p{
     color: var(--white-color);
     background: var(--pink-color);
     display: inline-block;
-    padding: 5px 10px;
+    padding: 1px 10px;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 25px;
 }
 
 .products__old-price {

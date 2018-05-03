@@ -9,11 +9,11 @@ function goodsOut(data) {
         out += `<a href="#" class="products__link">`;
         out += `<div class="products__price">`;
         if (data[key].new_price != 0)
-        out += `<p class="products__new-price">$${+data[key].new_price}<br>`;
+        out += `<p class="products__new-price">$${data[key].new_price.toFixed(2)}<br>`;
         if (data[key].base_price != 0)
-        out += `<p class="products__base-price">$${data[key].base_price}<br>`;
+        out += `<p class="products__base-price">$${data[key].base_price.toFixed(2)}<br>`;
         if (data[key].old_price != 0)
-        out += `<span class="products__old-price">$${data[key].old_price}</span></p>`;
+        out += `<span class="products__old-price">$${data[key].old_price.toFixed(2)}</span></p>`;
         out += `</div>`;
         if (data[key].sale != 0)
         out += `<p class="products__sale">-${data[key].sale}%</p>`;
