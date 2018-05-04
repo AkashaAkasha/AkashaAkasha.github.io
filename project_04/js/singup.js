@@ -28,12 +28,12 @@ function showError(container, errorMessage) {
 
       resetError(elems.firstname.parentNode);
       if (!elems.firstname.value) {
-        showError(elems.firstname.parentNode, 'Please enter firstname');
+        showError(elems.firstname.parentNode, 'Please enter first name');
       }
 
       resetError(elems.lastname.parentNode);
       if (!elems.lastname.value) {
-        showError(elems.lastname.parentNode, 'Please enter lastname');
+        showError(elems.lastname.parentNode, 'Please enter last name');
       }
 
     }

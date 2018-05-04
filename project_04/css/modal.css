@@ -113,3 +113,7 @@
 .popup a {
     color: var(--pink-color);
 }
+
+.popup .error .error-message{
+    color: red;
+}
