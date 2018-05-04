@@ -63,13 +63,13 @@
                 <form class="popup_login" name="login" action="#" method="post">
                 <div>
                     <label for="login">Login</label>
-                    <input type="text" id="login" value="" />
+                    <input type="text" id="login" value="" name="email"/>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" value="" />
+                    <input type="password" id="password" value="" name="password"/>
                 </div>
-                <input class="btn-popup" type="button" value="Login" />
+                <input class="btn-popup" type="button" value="Login" onclick="validatelog(this.form)"/>
                 </form>
                 <a class="close" href="#close"></a>
             </div>
@@ -81,21 +81,21 @@
             <form class="popup_singup" name="singup" action="#" method="post">
                 <div>
                     <label for="email">Login (Email)</label>
-                    <input type="text" id="email" value="" />
+                    <input type="text" id="email" value="" name="email"/>
                 </div>
                 <div>
                     <label for="pass">Password</label>
-                    <input type="password" id="pass" value="" />
+                    <input type="password" id="pass" value="" name="password"/>
                 </div>
                 <div>
                     <label for="firstname">First name</label>
-                    <input type="text" id="firstname" value="" />
+                    <input type="text" id="firstname" value="" name="firstname" />
                 </div>
                 <div>
                     <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" value="" />
+                    <input type="text" id="lastname" value="" name="lastname"/>
                 </div>
-                <input class="btn-popup" type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Login</a>
+                <input class="btn-popup" type="button" value="Sign Up" onclick="validatesing(this.form)" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Login</a>
             </form>
             <a class="close" href="#close"></a>
         </div>
@@ -401,6 +401,8 @@
 <script src="js/sticky-header.js"></script>
 <script src="js/toup.js"></script>
 <script src="js/goodsout.js"></script>
+<script src="js/login.js"></script>
+<script src="js/singup.js"></script>
     
 </body>
 </html>
