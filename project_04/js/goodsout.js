@@ -2,6 +2,14 @@ function init(){
     $.getJSON("goods.json", goodsOut);
 }
 
+function initPop(){
+    $.getJSON("goodspop.json", goodsOut);
+}
+
+function initTp(){
+    $.getJSON("goodstp.json", goodsOut);
+}
+
 function goodsOut(data) {
     var out="";
     for (var key in data){
@@ -32,3 +40,10 @@ function goodsOut(data) {
 $(document).ready(function(){
     init();
 });
+
+var prodnew = document.querySelector("#products-new");
+var pop = document.querySelector("#products-popular");
+var toppic = document.querySelector("#products-top_picks");
+prodnew.onclick = init;
+pop.onclick = initPop;
+toppic.onclick = initTp;
