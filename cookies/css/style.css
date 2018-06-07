@@ -89,10 +89,11 @@ ul{
     width: 100%;
 }
 
-.wrap_sec p {
+.wrap_sec p, .wrap_three p {
     font-size: 30px;
     font-style: italic;
     padding: 50px 0;
+    text-align: justify;
 }
 
 .grid_item h4{
@@ -124,8 +125,9 @@ ul{
     border: none;
     cursor: pointer;
     background-color: white;
-    color: gray;
-    font-size: 18px;
+    color: #503021;
+    font-size: 20px;
+    font-weight: 600;
     margin: 20px 5px;
     margin: 10px 5px;
 }
@@ -137,6 +139,12 @@ ul{
 }
 .post img{
     width: 100%;
+}
+.a-btn{
+    color: #503021;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
 }
 /*---------------------------------------------------------------------------------------*/
 @media screen and (max-width: 720px){
