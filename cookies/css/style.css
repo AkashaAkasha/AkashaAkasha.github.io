@@ -141,10 +141,32 @@ ul{
     width: 100%;
 }
 .a-btn{
-    color: #503021;
+    color: khaki;
+    background-color: #503021;
     font-size: 20px;
     font-weight: 600;
     padding: 10px;
+    margin: 40px;
+    display: inline-block;
+}
+footer {
+    background: #503021;
+    color: khaki;
+}
+.footer_wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.text_footer{
+    padding: 20px 0;
+}
+.text_footer h3{
+    font-size: 30px;
+    font-style: italic;
+    line-height: 2;
+}
+.text_footer h4{
+    line-height: 1.5;
 }
 /*---------------------------------------------------------------------------------------*/
 @media screen and (max-width: 720px){
